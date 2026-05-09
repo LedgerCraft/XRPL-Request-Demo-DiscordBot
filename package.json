@@ -1,0 +1,22 @@
+{
+  "name": "xrpl-request-discord-bot",
+  "version": "1.0.0",
+  "description": "Demo Discord bot showing how to integrate XRPL Request wallet signing",
+  "type": "module",
+  "scripts": {
+    "register": "tsx src/register.ts",
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@xrplrequest/sdk": "^1.0.0",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
