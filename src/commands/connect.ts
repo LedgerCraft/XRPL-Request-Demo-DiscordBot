@@ -55,7 +55,7 @@ export async function handleConnect(
     // Editing the reply clears the button now that a decision has been made.
     if (result.status === "signed") {
       await interaction.editReply({
-        content: `✅ Wallet connected! Address: \`${result.response.signerAddress}\``,
+        content: `✅ Wallet connected! Address: \`${result.signerAddress}\``,
         embeds: [],
         components: [],
       });
